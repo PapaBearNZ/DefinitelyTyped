@@ -43,6 +43,7 @@ export interface FormProps {
         [field: string]: (value: FormValue) => Promise<any>
     };
     dontPreventDefault?: boolean;
+    getApi?(formApi: FormApi): void;
 }
 
 export interface FormApi {
